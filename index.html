@@ -30,8 +30,8 @@
 							{{/each}}
 						</ul>
 					</section>
+				{{/if}}
 					<footer id="footer">
-						<span id="todo-count">{{{remainingFormatted}}}</span>
 						<ul id="filters">
 							<li>
                 {{#linkTo todos.index activeClass="selected"}}Bandeja{{/linkTo}}
@@ -41,7 +41,6 @@
 							</li>
 						</ul>
 					</footer>
-				{{/if}}
 			</section>
 		</script>
 		<script src="components/todomvc-common/base.js"></script>
