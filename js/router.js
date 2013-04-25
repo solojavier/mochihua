@@ -20,7 +20,6 @@ Todos.TodosIndexRoute = Ember.Route.extend({
 				return true;
 			}
     });
-    console.log(todos);
 		this.controllerFor('todos').set('filteredTodos', todos);
 	}
 });
