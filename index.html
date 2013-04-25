@@ -17,7 +17,7 @@
 				{{#if length}}
 					<section id="main">
 						<ul id="todo-list">
-							{{#each filteredTodos itemController="todo"}}
+							{{#each arrangedContent itemController="todo"}}
 								<li {{bindAttr class="isCompleted:completed isEditing:editing"}}>
 									{{#if isEditing}}
 										{{view Todos.EditTodoView todoBinding="this"}}

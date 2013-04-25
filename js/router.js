@@ -20,7 +20,9 @@ Todos.TodosIndexRoute = Ember.Route.extend({
 				return true;
 			}
     });
-		this.controllerFor('todos').set('filteredTodos', todos);
+    this.controllerFor('todos').set('sortProperties', null);
+		this.controllerFor('todos').set('content', todos);
+
 	}
 });
 
@@ -32,6 +34,7 @@ Todos.TodosCompletedRoute = Ember.Route.extend({
 			}
 		});
 
-		this.controllerFor('todos').set('filteredTodos', todos);
+    this.controllerFor('todos').set('sortProperties', ['title']);
+		this.controllerFor('todos').set('content', todos);
 	}
 });
