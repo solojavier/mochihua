@@ -4,17 +4,10 @@
 Todos.EditTodoView = Ember.TextField.extend({
 	classNames: ['edit'],
 
-	valueBinding: 'todo.title',
-
-	change: function () {
-		var value = this.get('value');
-
-		if (Ember.isEmpty(value)) {
-			this.get('controller').removeTodo();
-		}
-	},
+	valueBinding: Ember.Binding.oneWay('todo.title'),
 
 	focusOut: function () {
+    this.set('todo.title', this.get('value'));
 		this.set('controller.isEditing', false);
 	},
 
