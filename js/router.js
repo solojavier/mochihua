@@ -22,7 +22,6 @@ Todos.TodosIndexRoute = Ember.Route.extend({
     });
     this.controllerFor('todos').set('sortProperties', null);
 		this.controllerFor('todos').set('content', todos);
-
 	}
 });
 

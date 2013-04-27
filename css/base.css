@@ -186,6 +186,13 @@ label[for='toggle-all'] {
 	border-bottom: 1px dotted #ccc;
 }
 
+#todo-list li.completed{
+  display: block;
+	position: relative;
+	font-size: 24px;
+	border-bottom: 1px dotted #ccc;
+}
+
 #todo-list li:last-child {
 	border-bottom: none;
 }
@@ -277,7 +284,7 @@ label[for='toggle-all'] {
 }
 
 #todo-list li .destroy:after {
-	content: '✖';
+	content: '✔';
 }
 
 #todo-list li .destroy {
@@ -288,7 +295,7 @@ label[for='toggle-all'] {
 	display: none;
 }
 
-#todo-list li:nth-child(-n+21){
+#todo-list li:nth-child(-n+3){
 	display: block;
 }
 
