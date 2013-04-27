@@ -13,13 +13,13 @@
 					<h1>mochihua</h1>
 						<ul id="filters">
 							<li>
-                {{#linkTo todos.index activeClass="selected"}}Decidete{{/linkTo}}
+                {{#linkTo todos.index activeClass="selected"}}Decídete{{/linkTo}}
 							</li>
 							<li>
 								{{#linkTo todos.completed activeClass="selected"}}Hazlo{{/linkTo}}
 							</li>
 						</ul>
-					{{view Ember.TextField id="new-todo" placeholder="¿Que quieres hacer?"
+					{{view Ember.TextField id="new-todo" placeholder="Anótalo"
 								 valueBinding="newTitle" action="createTodo"}}
 				</header>
 				{{#if length}}
