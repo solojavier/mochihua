@@ -180,6 +180,7 @@ label[for='toggle-all'] {
 }
 
 #todo-list li {
+  display: none;
 	position: relative;
 	font-size: 24px;
 	border-bottom: 1px dotted #ccc;
@@ -285,6 +286,10 @@ label[for='toggle-all'] {
 
 #todo-list li .edit {
 	display: none;
+}
+
+#todo-list li:nth-child(-n+21){
+	display: block;
 }
 
 #todo-list li.editing:last-child {
