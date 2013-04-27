@@ -11,7 +11,15 @@
 			<section id="todoapp">
 				<header id="header">
 					<h1>mochihua</h1>
-					{{view Ember.TextField id="new-todo" placeholder="Que quieres hacer?"
+						<ul id="filters">
+							<li>
+                {{#linkTo todos.index activeClass="selected"}}Decidete{{/linkTo}}
+							</li>
+							<li>
+								{{#linkTo todos.completed activeClass="selected"}}Hazlo{{/linkTo}}
+							</li>
+						</ul>
+					{{view Ember.TextField id="new-todo" placeholder="¿Que quieres hacer?"
 								 valueBinding="newTitle" action="createTodo"}}
 				</header>
 				{{#if length}}
@@ -31,16 +39,6 @@
 						</ul>
 					</section>
 				{{/if}}
-					<footer id="footer">
-						<ul id="filters">
-							<li>
-                {{#linkTo todos.index activeClass="selected"}}Decidete{{/linkTo}}
-							</li>
-							<li>
-								{{#linkTo todos.completed activeClass="selected"}}Hazlo{{/linkTo}}
-							</li>
-						</ul>
-					</footer>
 			</section>
 		</script>
 		<script src="js/libs/jquery.js"></script>

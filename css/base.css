@@ -337,11 +337,10 @@ label[for='toggle-all'] {
 
 #filters {
 	margin: 0;
-	padding: 0;
-	list-style: none;
-	position: absolute;
-	right: 0;
-	left: 0;
+  padding: 0;
+  line-height: 2;
+	text-align: center;
+  background-color: rgba(0, 0, 0, 0.02);
 }
 
 #filters li {
